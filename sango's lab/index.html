@@ -4,24 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sango's LAB</title>
 </head>
 <body>
-    <h1>E-Liquid calculator</h1>
-    <p>Kívant mennyiség</p>
-    <input type="number" name="trgML" id="targetML">
-    <br>
-    <p>Kívánt erősség</p>
-    <input type="number" name="trgML" id="targetStr">
-    <p>Kívánt íz %</p>
-    <input type="number" name="trgML" id="targetFla">
-    <p>Alap Nicotine erősség</p>
-    <input type="text" disabled placeholder="18mg">
-    <button id="btn" onclick="szamolas()">szamolas</button>
-
-    <p id="flavour"></p>
-    <p id="nicotine"></p>
-    <p id="alaple"></p>
+    <div class="container">
+        <div class="content">
+            <h1>E-Liquid calculator</h1>
+            <div class="inputs">
+                <p class="iras">Kívánt mennyiség</p>
+                <input type="number" name="trgML" id="targetML">
+                <br>
+                <p class="iras">Kívánt erősség</p>
+                <input type="number" name="trgML" id="targetStr">
+                <p class="iras">Kívánt íz %</p>
+                <input type="number" name="trgML" id="targetFla">
+                <p class="iras">Alap Nicotine erősség</p>
+                <input type="text" disabled placeholder="18mg">
+                <br>
+                <button id="btn" class="btn" onclick="szamolas()">szamolas</button>
+            </div>
+        
+            <p id="flavour"></p>
+            <p id="nicotine"></p>
+            <p id="alaple"></p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

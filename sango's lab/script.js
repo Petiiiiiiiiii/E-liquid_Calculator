@@ -2,12 +2,13 @@ function szamolas()
 {
     let mennyiseg = document.getElementById("targetML").value;
     let erosseg = document.getElementById("targetStr").value;
+    let iz = document.getElementById("targetFla").value;
 
     let flavour
     let nicotine
     let alaple
 
-    flavour = mennyiseg * 0.15;
+    flavour = (iz / 100) * mennyiseg;
     nicotine = (erosseg * 0.06) * mennyiseg; //6mg 1mg = 6%
     alaple = mennyiseg - flavour - nicotine;
 
